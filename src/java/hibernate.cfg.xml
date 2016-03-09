@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/churchdb?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">Moshata@2</property>
+    <mapping resource="Model/Administrator.hbm.xml"/>
+    <mapping resource="Model/Member.hbm.xml"/>
+    <mapping resource="Model/PrayerRequest.hbm.xml"/>
+    <mapping resource="Model/Finance.hbm.xml"/>
+    <mapping resource="Model/Tithe.hbm.xml"/>
+    <mapping resource="Model/Leaders.hbm.xml"/>
+    <mapping resource="Model/Events.hbm.xml"/>
+    <mapping resource="Model/PerformanceAssessment.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
