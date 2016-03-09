@@ -23,7 +23,7 @@ public class AdminManager {
             ad.setEmail(adminEmail);
             session.save(ad);
             trans.commit();
-            System.out.println("Administrator " + ad.getName() + " added");
+            System.out.println("Administrator " + ad.getName() + " added successfully");
         }catch(Exception e){
             e.printStackTrace();
         } finally { 
